@@ -1,0 +1,344 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== HEADER / NAV ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #1a1a2e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 24px;
+  font-size: 0.95rem;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e94560;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0f3460, #16213e);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #ddd;
+}
+
+/* ===== BUTTONS ===== */
+.btn-main {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #e94560;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-main:hover {
+  background: #c73650;
+}
+
+.btn-small {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #0f3460;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.btn-small:hover {
+  background: #16213e;
+}
+
+/* ===== SECTIONS (shared) ===== */
+section {
+  padding: 60px 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #16213e;
+}
+
+/* ===== ABOUT-HOME ===== */
+.about-home {
+  background: #fff;
+  text-align: center;
+}
+
+.about-home p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* ===== CARDS GRID ===== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.card h3 {
+  padding: 14px 16px 4px;
+  font-size: 1.15rem;
+  color: #16213e;
+}
+
+.card p {
+  padding: 0 16px 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card .btn-small {
+  margin: 0 16px 16px;
+}
+
+/* ===== CLUBS-HOME / EVENTS-HOME ===== */
+.clubs-home,
+.events-home {
+  background: #f0f0f5;
+}
+
+/* ===== PAGE HEADER (inner pages) ===== */
+.page-header {
+  background: linear-gradient(135deg, #0f3460, #16213e);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+/* ===== CLUBS PAGE ===== */
+.clubs-section {
+  background: #f5f5f5;
+}
+
+.clubs-section .cards {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== EVENTS PAGE ===== */
+.events-section {
+  background: #f5f5f5;
+}
+
+.events-section .cards {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.event-date {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 16px 8px;
+  background: #e94560;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-section {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.about-section ul {
+  list-style: disc inside;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.about-section ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-section label {
+  font-weight: 600;
+  color: #16213e;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border-color: #0f3460;
+}
+
+.contact-section button {
+  padding: 12px;
+  background: #e94560;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-section button:hover {
+  background: #c73650;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+  color: #555;
+}
+
+.contact-info p {
+  margin-bottom: 6px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
